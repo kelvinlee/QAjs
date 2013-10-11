@@ -13,7 +13,6 @@ class QAjs
 	ep : false
 	init: (e,data)->
 		$n = data.length
-		# console.log this.now
 		this.qa = data
 		this.ep = e
 		this.ep.html this.showQ()
@@ -68,9 +67,7 @@ class QAjs
 		
 	settlement: ()->
 		this.myAnswer[this.now] = $(this.ep).find("form").serializeArray()
-		# console.log this.myAnswer
-	showQ: ->
-		# console.log this.now,this.qa.length
+	showQ: -> 
 		if this.now is this.qa.length
 			this.createEnd()
 		else
@@ -78,7 +75,6 @@ class QAjs
 
 	showNext: ()-> 
 		$this = this
-		# console.log this.now,this.qa.length
 		return false if this.now is -1
 		if !this.ep
 			return yes
