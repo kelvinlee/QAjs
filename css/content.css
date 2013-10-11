@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #ffffff;
+  font-family: "微软雅黑", Microsoft YaHei, Arial;
+}
+input,
+select,
+textarea {
+  font-family: "微软雅黑", Microsoft YaHei, Arial;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.right {
+  color: green;
+}
+.wrong {
+  color: red !important;
+}
