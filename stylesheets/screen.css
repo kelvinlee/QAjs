@@ -567,3 +567,10 @@ dd p:first-child {
   font-size: .85em;
   font-style: italic;
 }
+
+.right {
+  color:green;
+}
+.wrong {
+  color:red !important;
+}
